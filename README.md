@@ -2,6 +2,8 @@
 
 Essa é uma extensão com o proposito de adicionar a funcionalidade de expandir o canvas usado no projeto "Finite State Machine" do site MadeByEvan disponível [aqui](http://madebyevan.com/fsm/). É adicionado um botão à página que quando clicado expandirá alternará a visão entre tela cheia e exibição normal.
 
+https://user-images.githubusercontent.com/54212199/112735797-d16f5700-8f2c-11eb-9428-c6fa93b69f72.mp4
+
 ## Compatibilidade
 
 A extensão é compatível com o navegador Google Chrome e todos os demais navegadores baseados no mesmo, tais como brave, edge entre outros.
