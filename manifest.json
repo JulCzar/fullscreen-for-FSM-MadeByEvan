@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "MBE FSM fullScreen",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://madebyevan.com/fsm/"
+      ],
+      "js": [
+        "index.js",
+        "./src/fix.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
