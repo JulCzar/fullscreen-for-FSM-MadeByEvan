@@ -5,13 +5,8 @@
 
   "content_scripts": [
     {
-      "matches": [
-        "http://madebyevan.com/fsm/"
-      ],
-      "js": [
-        "index.js",
-        "./src/fix.js"
-      ]
+      "matches": ["http://madebyevan.com/fsm/"],
+      "js": ["index.js"]
     }
   ],
   "browser_action": {
