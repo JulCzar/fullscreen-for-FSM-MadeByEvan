@@ -19,3 +19,7 @@ para aqueles que não estão acostumados com a instalação de extensões em mod
 - com o modo de desenvolvedor ativado, abra o diretório que contem o repositório clonado, selecione e arraste a pasta do diretório para o navegador com a tela de extensões aberta
 
 A extensão deve ser carregada corretamente e já está funcionando, dá próxima vez que acessar o [Editor de maquinas de estados](http://madebyevan.com/fsm/) a extensão já irá carregar o botão na página com os devidos estilos aplicados.
+
+## Considerações
+
+A extensão faz com que o canvas do site fique do tamanho da tela usada, algo que foge ao planejado pelo criador da aplicação, logo a exportação de código para o LaTeX pode vazar da página, para corrigir esse problema, pode-se modificar a escala da marcação gerada para exportar o vetor ao LaTeX, a escala padrão é 0.2, para um monitor FullHD recomendo utilizar a escala 0.1, para demais resoluções recomendo ir realizando testes para encontrar a escala que melhor se adequa a resolução do seu monitor a folha A4 gerada no documento do LaTeX.
