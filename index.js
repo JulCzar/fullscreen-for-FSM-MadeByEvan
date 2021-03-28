@@ -49,11 +49,11 @@ const d = document;
           isFullScreen: false,
           button: null
         };
-    
+
         const growCanvas = () => {
           window.canvas.width = window.outerWidth;
           window.canvas.height = window.outerHeight;
-    
+
           window.canvas.style = `
             position: absolute;
             left: 0;
@@ -63,10 +63,10 @@ const d = document;
             border-radius: 0;
             transition: 300ms;
           `;
-    
+
           window['draw']();
         };
-    
+
         const shrinkCanvas = () => {
           window.canvas.width = 800;
           window.canvas.height = 600;
@@ -75,10 +75,10 @@ const d = document;
             width: 800px;
             height: 600px;
           `;
-    
+
           window['draw']();
         };
-    
+
         const toggleFullScreen = () => {
           if (state.isFullScreen) {
             d.exitFullscreen();
@@ -103,38 +103,36 @@ const d = document;
             console.log('FULLSCREEN MBE FSM: entering fullscreen mode');
           };
         };
-    
+
         const renderToggleButton = () => {
           const expandButton = (function () {
             const div = d.createElement('div');
-    
-            div.classList.add(BUTTON_CLASS)
-            
-            div.classList.add('fas', MAXIMIZE_ICON, 'fa-2x');
-  
+
+            div.classList.add(BUTTON_CLASS,'fas', MAXIMIZE_ICON, 'fa-2x');
+
             div.addEventListener('click', toggleFullScreen);
-  
+
             return div
           })();
-    
+
           d.body.append(expandButton);
-          
+
           console.log('FULLSCREEN MBE FSM: button Rendered!');
 
           return expandButton
         };
-    
+
         const run = () => {
           const button = renderToggleButton();
 
           state.button = button
         };
-    
+
         console.log('FULLSCREEN MBE FSM: extension Loaded!');
-    
+
         return { run }
       })();
-    
+
       app.run();
     }).toString();
 
@@ -142,7 +140,7 @@ const d = document;
 
     return script
   })();
-  
+
   const fontAwesome = (function () {
     const link = d.createElement('link');
     link.integrity = 'sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==';
@@ -152,6 +150,6 @@ const d = document;
 
     return link
   })();
-  
+
   d.head.append(appCode, appStyles, fontAwesome)
 })()
