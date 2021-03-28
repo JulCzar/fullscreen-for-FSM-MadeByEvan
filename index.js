@@ -117,7 +117,7 @@ const d = document;
 
           d.body.append(expandButton);
 
-          console.log('FULLSCREEN MBE FSM: button Rendered!');
+          console.log('FULLSCREEN MBE FSM: Toggle Button Rendered!');
 
           return expandButton
         };
@@ -151,5 +151,6 @@ const d = document;
     return link
   })();
 
+  console.log('FULLSCREEN MBE FSM: injecting code and styles on page...')
   d.head.append(appCode, appStyles, fontAwesome)
 })()
