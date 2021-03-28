@@ -132,7 +132,7 @@ const d = document;
     
         console.log('FULLSCREEN MBE FSM: extension Loaded!');
     
-        return { run, undoCanvasFix }
+        return { run }
       })();
     
       app.run();
