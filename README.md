@@ -24,4 +24,6 @@ A extensão deve ser carregada corretamente e já está funcionando, dá próxim
 
 ## Considerações
 
-A extensão faz com que o canvas do site fique do tamanho da tela usada, algo que foge ao planejado pelo criador da aplicação, logo a exportação de código para o LaTeX pode vazar da página, para corrigir esse problema, pode-se modificar a escala da marcação gerada para exportar o vetor ao LaTeX, a escala padrão é 0.2, para um monitor FullHD recomendo utilizar a escala 0.1, para demais resoluções recomendo ir realizando testes para encontrar a escala que melhor se adequa a resolução do seu monitor a folha A4 gerada no documento do LaTeX.
+- A extensão faz com que o canvas do site fique do tamanho da tela usada, algo que foge ao planejado pelo criador da aplicação, logo a exportação de código para o LaTeX pode vazar da página, para corrigir esse problema, pode-se modificar a escala da marcação gerada para exportar o vetor ao LaTeX, a escala padrão é 0.2, para um monitor FullHD recomendo utilizar a escala 0.1, para demais resoluções recomendo ir realizando testes para encontrar a escala que melhor se adequa a resolução do seu monitor a folha A4 gerada no documento do LaTeX.
+
+- Assim como anteriormente mencionado, a exportação de SVG's é feita com base no canvas original de dimensões 800x600, então para a correta visualização do vetor gerado, deve-se modificar o tamanho do svg manualmente após exportação.
